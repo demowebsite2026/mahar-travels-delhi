@@ -34,19 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 0.2
     });
 
-    gsap.utils.toArray('.gsap-cards').forEach(section => {
-      gsap.from(section.children, {
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 80%'
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: 'power2.out'
-      });
-    });
+    
   }
 
   // 3. Terminal Live Clock
@@ -118,3 +106,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
